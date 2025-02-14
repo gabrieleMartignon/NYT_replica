@@ -1,0 +1,14 @@
+
+.login {
+    display: inline-block; 
+    width: 7vw;            
+    text-align: center;     
+}
+
+
+.login>img {
+    width: 5vw;            
+    height: auto;          
+    display: block;         
+    margin: 0 auto;         
+}

@@ -1,0 +1,41 @@
+a>h3{
+    font-size: 13px;
+    color: rgb(32, 33, 33);
+}
+
+article>a{
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
+    text-align: start;
+    text-decoration: none;
+}
+
+.text{
+    padding-top: 1vh;
+    margin: 0;
+}
+
+a>h1.text{
+    font-size: 23px;
+}
+
+a>h2.text{
+    font-size: 15px;
+    color: gray;
+}
+
+article>a>img{
+   height: 100%;
+   width: 100%;
+   padding-top: 1vh;
+   padding-bottom: 1vh;
+    
+}
+
+article>hr{
+    width: 100%;
+    margin-bottom: 4vh;
+}

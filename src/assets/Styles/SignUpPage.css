@@ -1,0 +1,75 @@
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+}
+
+label{
+    text-align: start;
+    padding-bottom: 0.5vh;
+    padding-top: 2vh;
+    font-size: 14px;
+    
+    font-weight: bolder;
+}
+
+input{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    min-height: 2.5vh;
+    height: 2.5vw;
+    font-family: monospace;
+    padding-left: 8px;
+}
+
+h2, label,input:last-of-type{
+font-family: monospace
+}
+
+h2{
+    font-size: 20px;
+    padding-top: 10vh;
+}
+
+input:last-of-type{
+    margin-top: 3vh;
+    background-color: black;
+    color: white;
+    height: 3vw;
+
+}
+
+#line{
+    margin-top: 4vh;
+}
+
+
+
+a{
+    color: black;
+    font-family: Helvetica;
+}
+
+p,a{
+    font-size: 14px;
+}
+
+.SignUp{
+    padding-top: 2vh;
+    color: gray;
+    font-family: monospace;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.SignUp:hover{
+    color: black;
+}
+
+Link{
+    display: none;
+}

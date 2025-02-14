@@ -1,0 +1,19 @@
+#HeadPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding-top: 2vw;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-bottom: 1px solid lightgray;
+  
+}
+
+a>img {
+  width: 55vw;
+  height: 7vw;
+  margin-top: 1vw;
+}
+
+

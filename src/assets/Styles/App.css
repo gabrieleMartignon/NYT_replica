@@ -1,0 +1,13 @@
+#root {
+  min-width: 100vw;
+  text-align: center;
+  overflow: unset;
+  background-color: white;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+hr{
+  opacity: 0.5;
+  border: 0.1vh solid lightgray;
+}

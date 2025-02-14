@@ -1,0 +1,49 @@
+.isClosed{
+    transform: translateX(-108vw);
+}
+
+.isOpen{
+    transform: translateX(0vw);
+}
+
+.isOpen, .isClosed{
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    transition: 1s linear;
+    background-color: white;
+    transition: transform 0.7s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 4vw;
+    padding-left: 4vw;
+    padding-top: 10vh;
+    z-index: 1;
+    
+}
+
+aside>img{
+    height: 6vw;
+    width: 6vw;
+    cursor: pointer;
+    padding-bottom: 2vh;
+}
+
+.Link{
+    height: 4vh;
+    text-decoration: none;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-left: 2vw;
+}
+
+
+
+
+
+
+
+
