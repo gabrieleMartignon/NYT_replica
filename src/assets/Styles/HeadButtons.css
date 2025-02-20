@@ -1,14 +1,22 @@
+body{
+    overflow: scroll;
+}
 
 .login {
-    display: inline-block; 
-    width: 7vw;            
-    text-align: center;     
+    width: 7vw;               
 }
 
 
 .login>img {
-    width: 5vw;            
-    height: auto;          
-    display: block;         
-    margin: 0 auto;         
+    width: 27.5px;            
+    height: 27.5px;                 
+             
+}
+
+
+@media (min-width:768px){
+    .login>img{
+        width: 35px;
+        height: 35px;
+    }
 }

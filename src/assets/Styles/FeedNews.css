@@ -1,3 +1,7 @@
+article{
+    padding-bottom: 3vh;
+
+}
 a>h3{
     font-size: 13px;
     color: rgb(32, 33, 33);
@@ -28,14 +32,21 @@ a>h2.text{
 }
 
 article>a>img{
-   height: 100%;
    width: 100%;
+   padding-bottom: 2vh;
    padding-top: 1vh;
-   padding-bottom: 1vh;
-    
 }
 
 article>hr{
-    width: 100%;
-    margin-bottom: 4vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+@media (min-width:1024px){
+    article{
+        max-width: 60vw;
+        border-right: 1px solid lightgray;
+    }
 }

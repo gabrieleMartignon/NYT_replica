@@ -10,22 +10,29 @@ function FeedNews() {
   const error = useSelector((state) => state.feedNews.error);
   const news = useSelector((state) => state.feedNews.news);
 
-  const apikey = "gZUVYwEoMvoAEkuzRv2ZItDcCouLcs0T";
-  const url = `https://api.nytimes.com/svc/news/v3/content/nyt/World.json?limit=10&api-key=${apikey}`;
 
-  useEffect(() => {
+  const APIKEY = "gZUVYwEoMvoAEkuzRv2ZItDcCouLcs0T";
+  const MAIN_NEWS = `https://api.nytimes.com/svc/news/v3/content/nyt/World.json?limit=10&api-key=${APIKEY}`;
+  const SIDE_NEWS = `https://api.nytimes.com/svc/mostpopular/v2/emailed/1.json?api-key=${APIKEY}`
+
+  function fetchData(url){
     dispatch(setLoading(true));
     axios
       .get(url)
       .then((response) => {
         dispatch(setNews(response.data));
         dispatch(setLoading(false));
+        console.log(response.data)
       })
       .catch((error) => {
         dispatch(setError(error));
         console.error(error, "API Request Failed");
         dispatch(setLoading(false));
       });
+  }
+
+  useEffect(() => {
+    fetchData(MAIN_NEWS)
   }, []);
 
   if (loading) {
@@ -61,6 +68,7 @@ function FeedNews() {
             </article>
           );
         })}
+        
     </>
   );
 }

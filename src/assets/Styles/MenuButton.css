@@ -6,6 +6,7 @@
   justify-content: center;
   border-radius: 20%;
   cursor: pointer;
+  
 }
 
 #Menu:hover {
@@ -20,4 +21,15 @@
 
 .no-scroll{
   position: fixed;
+}
+
+@media (min-width:768px){
+  #Menu>svg{
+    max-width: 30px;
+    max-height: 30px;
+  }
+  #Menu{
+    max-width: 40px;
+    max-height: 40px;
+  }
 }

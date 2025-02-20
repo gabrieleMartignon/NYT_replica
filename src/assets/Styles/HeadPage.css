@@ -4,16 +4,30 @@
   align-items: center;
   height: 5vh;
   padding-top: 2vw;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border-bottom: 1px solid lightgray;
-  
+  padding-right: 2vw;
+  border-bottom: 1px solid lightgray;  
 }
 
-a>img {
-  width: 55vw;
-  height: 7vw;
-  margin-top: 1vw;
+a>img.logo {
+  width: 45vw;
+  height: 3.25vh;
+  margin-top: 0.5vh;
+  max-width: 300px;
 }
+
+
+@media (min-width:768px){
+  a>img.logo{
+    height: 50px;
+    max-width: 350px;
+  }
+  #HeadPage{
+    padding-bottom: 1.5vh;
+    padding-left: 1.5vw;
+  }
+}
+
+
+
 
 
