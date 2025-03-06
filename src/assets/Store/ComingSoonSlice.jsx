@@ -3,13 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const comingSoonSlice = createSlice({
   name: "comingSoon",
-  initialState: false,  
+  initialState: false,
   reducers: {
     showComingSoon: (state) => {
-      return true;  
+      return true;
     },
     hideComingSoon: (state) => {
-      return false;  
+      return false;
     },
   },
 });

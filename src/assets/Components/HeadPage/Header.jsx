@@ -1,26 +1,49 @@
 import { useDispatch, useSelector } from "react-redux";
 import { showComingSoon, hideComingSoon } from "../../Store/ComingSoonSlice";
-import '../../Styles/Header.css'
- // Importa le azioni
+import "../../Styles/Header.css";
+// Importa le azioni
 
 function Header() {
   const dispatch = useDispatch();
   const isComingSoon = useSelector((state) => state.comingSoon);
 
   const today = new Date();
-  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   const todayDay = days[today.getDay()];
   const todayMonth = months[today.getMonth()];
   const todayYear = today.getFullYear();
-  const todaysDate = `${todayDay},${todayMonth+" " + today.getDate()},${todayYear}`;
+  const todaysDate = `${todayDay},${
+    todayMonth + " " + today.getDate()
+  },${todayYear}`;
 
   function handleClick() {
-    dispatch(showComingSoon()); 
-    
+    dispatch(showComingSoon());
+
     setTimeout(() => {
-      dispatch(hideComingSoon()); 
+      dispatch(hideComingSoon());
     }, 1000);
   }
 

@@ -1,13 +1,27 @@
 #root {
+  display: flex;
+  flex-direction: column;
   min-width: 100vw;
   text-align: center;
-  overflow: unset;
   background-color: white;
   min-height: 100vh;
-  overflow: hidden;
 }
 
-hr{
-  opacity: 0.5;
-  border: 0.1vh solid lightgray;
+@font-face {
+  font-family: "cheltenham";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../Fonts/CheltenhamStdBook.woff) format("woff");
+}
+
+* {
+  font-family: cheltenham;
+}
+
+body {
+  overflow: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }

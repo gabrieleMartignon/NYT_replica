@@ -5,29 +5,31 @@
   height: 5vh;
   padding-top: 2vw;
   padding-right: 2vw;
-  border-bottom: 1px solid lightgray;  
+  border-bottom: 1px solid lightgray;
 }
 
-a>img.logo {
+a > img.logo {
   width: 45vw;
-  height: 3.25vh;
+  height: 30px;
   margin-top: 0.5vh;
   max-width: 300px;
 }
 
-
-@media (min-width:768px){
-  a>img.logo{
+@media (min-width: 768px) {
+  a > img.logo {
     height: 50px;
     max-width: 350px;
   }
-  #HeadPage{
+  #HeadPage {
     padding-bottom: 1.5vh;
     padding-left: 1.5vw;
   }
 }
 
-
-
-
-
+@media (min-width: 768px) {
+  @media (max-width: 1023px) {
+    #HeadPage {
+      height: 7vh;
+    }
+  }
+}

@@ -1,52 +1,120 @@
-article{
-    padding-bottom: 3vh;
-
-}
-a>h3{
-    font-size: 13px;
-    color: rgb(32, 33, 33);
+.reading-info {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-article>a{
-    font-family: monospace;
-    display: flex;
-    flex-direction: column;
-    padding-left: 3.5vw;
-    padding-right: 3.5vw;
-    text-align: start;
-    text-decoration: none;
+.reading-info > h3 {
+  font-family: "Helvetica";
+  margin: 0;
+  padding-bottom: 2vh;
+  padding-top: 0.5vh;
+  color: #727272;
+  font-weight: normal;
+  font-size: 12px;
 }
 
-.text{
-    padding-top: 1vh;
-    margin: 0;
+.reading-info > h3:last-child {
+  padding-right: 1vw;
 }
 
-a>h1.text{
-    font-size: 23px;
+article.feed-news {
+  padding-bottom: 3vh;
 }
 
-a>h2.text{
-    font-size: 15px;
+a > h3 {
+  font-size: 13px;
+  color: rgb(32, 33, 33);
+}
+
+article.feed-news > a {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+  text-align: start;
+  text-decoration: none;
+}
+
+.text {
+  padding-top: 1vh;
+  margin: 0;
+}
+
+a > h1.text {
+  font-size: 23px;
+}
+
+a > h2.text {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 1vh;
+}
+
+article.feed-news > a > img {
+  padding-top: 1vh;
+  height: 40vh;
+}
+
+article.feed-news > hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+article:first-of-type {
+  margin-top: 3vh;
+}
+
+hr {
+  border: 0.05vh solid rgb(231, 229, 229);
+}
+
+@media (min-width: 768px) {
+  article.feed-news {
+    max-width: 100%;
+    border-right: 0.1vh solid rgb(231, 229, 229);
+  }
+  article.feed-news > a > img {
+    height: 40vh;
+    width: 52vw;
+  }
+  .feeed-News-API-error {
+    position: absolute;
+    left: 20vw;
+    top: 25vh;
+  }
+  .container {
+    width: 60vw;
+  }
+  a > h1.text {
+    font-size: 26px;
+  }
+
+  a > h2.text {
+    font-size: 18px;
     color: gray;
+    margin-bottom: 1vh;
+  }
+
+  a > h3 {
+    font-size: 18px;
+    color: rgb(32, 33, 33);
+  }
 }
 
-article>a>img{
-   width: 100%;
-   padding-bottom: 2vh;
-   padding-top: 1vh;
-}
-
-article>hr{
-    width: 90%;
-    margin: 0 auto;
-}
-
-
-
-@media (min-width:1024px){
-    article{
-        max-width: 60vw;
-        border-right: 1px solid lightgray;
+@media (min-width: 768px) {
+  @media (max-width: 1023px) {
+    a > h1.text {
+      font-size: 19px;
     }
+
+    a > h2.text {
+      font-size: 13px;
+    }
+
+    a > h3 {
+      font-size: 10px;
+    }
+  }
 }

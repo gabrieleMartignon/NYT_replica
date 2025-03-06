@@ -2,10 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const menuButtonSlice = createSlice({
   name: "menu",
-  initialState: false,  
+  initialState: false,
   reducers: {
     toggle: (state) => {
-      return !state;  
+      return !state;
     },
   },
 });

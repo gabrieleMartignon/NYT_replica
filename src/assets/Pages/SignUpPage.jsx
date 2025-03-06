@@ -10,15 +10,15 @@ function SignUpPage () {
         <>
         <HeadPage/>
         <h2>Sign up</h2>
-        <form action="" id='form'>
+        <form action="/Home" id='form'>
             <label>First Name</label>
-            <input type="text"/>
+            <input required type="text"/>
             <label>Last Name</label>
-            <input type="password"/>
+            <input required type="password"/>
             <label>Email</label>
-            <input type="email"/>
+            <input required type="email"/>
             <label>Password</label>
-            <input type="password"/>
+            <input required type="password"/>
             <input type="submit" value="Sign Up" />
             <div id='line'>
             <hr/>

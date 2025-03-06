@@ -1,22 +1,19 @@
-body{
-    overflow: scroll;
+body {
+  overflow: scroll;
 }
 
 .login {
-    width: 7vw;               
+  width: 7vw;
 }
 
-
-.login>img {
-    width: 27.5px;            
-    height: 27.5px;                 
-             
+.login > img {
+  width: 27.5px;
+  height: 27.5px;
 }
 
-
-@media (min-width:768px){
-    .login>img{
-        width: 35px;
-        height: 35px;
-    }
+@media (min-width: 768px) {
+  .login > img {
+    width: 35px;
+    height: 35px;
+  }
 }

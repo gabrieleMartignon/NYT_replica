@@ -6,29 +6,28 @@
   justify-content: center;
   border-radius: 20%;
   cursor: pointer;
-  
+  padding-left: 1vw;
 }
 
 #Menu:hover {
   background-color: rgb(235, 231, 231);
 }
 
-#Menu>svg{
+#Menu > svg {
   width: 5vw;
   height: 5vw;
-  
 }
 
-.no-scroll{
+.no-scroll {
   position: fixed;
 }
 
-@media (min-width:768px){
-  #Menu>svg{
+@media (min-width: 768px) {
+  #Menu > svg {
     max-width: 30px;
     max-height: 30px;
   }
-  #Menu{
+  #Menu {
     max-width: 40px;
     max-height: 40px;
   }
