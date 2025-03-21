@@ -68,7 +68,7 @@ function FeedNews() {
         actionToggle={toggleSectionFeedNews}
         setSection={changeSectionFeedNews}
         currentSection={currentSection}
-      />
+             />
       {news.results &&
         news.results.map((singleNews, key) => {
           const imageUrl = singleNews.multimedia[2]
