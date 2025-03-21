@@ -1,4 +1,4 @@
-import "../../Styles/HeadButtons.css";
+import "../../HeadPage/HeadButtons/HeadButtons.css";
 import { Link } from "react-router-dom";
 
 function HeadButtons() {

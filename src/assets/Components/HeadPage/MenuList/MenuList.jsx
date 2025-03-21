@@ -1,6 +1,6 @@
-import "../../Styles/MenuList.css";
+import "../../HeadPage/MenuList/MenuList.css";
 import { useSelector, useDispatch } from "react-redux";
-import { toggle } from "../../Store/menuButtonSlice";
+import { toggle } from "../../../Store/menuButtonSlice";
 import { Link } from "react-router-dom";
 
 function MenuList() {
@@ -18,7 +18,7 @@ function MenuList() {
         alt="Close"
         onClick={toggleMenu}
       />
-      <Link className="Link" onClick={toggleMenu} to={"/Home"}>
+      <Link className="Link" onClick={toggleMenu} to={"/Home/World/World"}>
         Home
       </Link>
       <Link className="Link" to={"/SignUp"} onClick={toggleMenu}>

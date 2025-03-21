@@ -10,12 +10,12 @@
 }
 
 p,
-button,
+.subscribe-button,
 .ComingSoon {
   font-weight: bold;
 }
 
-button {
+.subscribe-button {
   height: 4vh;
   width: 40vw;
   border: 1px solid black;
@@ -55,7 +55,7 @@ button {
 }
 
 @media (min-width: 768px) {
-  button,
+  .subscribe-button,
   .time p {
     font-size: 14px;
   }

@@ -32,6 +32,8 @@ input:last-of-type {
   background-color: black;
   color: white;
   height: 45px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 #line {

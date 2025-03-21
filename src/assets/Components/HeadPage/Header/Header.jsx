@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import { showComingSoon, hideComingSoon } from "../../Store/ComingSoonSlice";
-import "../../Styles/Header.css";
-// Importa le azioni
+import { showComingSoon, hideComingSoon } from "../../../Store/ComingSoonSlice";
+import "../../HeadPage/Header/Header.css";
 
 function Header() {
   const dispatch = useDispatch();
@@ -17,6 +16,7 @@ function Header() {
     "Friday",
     "Saturday",
   ];
+
   const months = [
     "January",
     "February",
@@ -35,9 +35,8 @@ function Header() {
   const todayDay = days[today.getDay()];
   const todayMonth = months[today.getMonth()];
   const todayYear = today.getFullYear();
-  const todaysDate = `${todayDay},${
-    todayMonth + " " + today.getDate()
-  },${todayYear}`;
+  const todaysDate = `${todayDay},${todayMonth + " " + today.getDate()
+    },${todayYear}`;
 
   function handleClick() {
     dispatch(showComingSoon());
@@ -50,7 +49,7 @@ function Header() {
   return (
     <div className="time">
       <p>{todaysDate}</p>
-      <button onClick={handleClick}>Subscribe for 0,50€/week</button>
+      <button className="subscribe-button" onClick={handleClick}>Subscribe for 0,50€/week</button>
       <div className={`ComingSoon ${isComingSoon ? "visible" : ""}`}>
         <p>Coming Soon</p>
       </div>

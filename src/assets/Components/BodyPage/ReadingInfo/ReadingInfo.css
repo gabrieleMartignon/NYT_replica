@@ -1,0 +1,21 @@
+.reading-info {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .reading-info > h3 {
+    font-family: "Helvetica";
+    margin: 0;
+    padding-bottom: 2vh;
+    padding-top: 0.5vh;
+    color: #727272;
+    font-weight: normal;
+    font-size: 13px;
+  }
+  
+  .reading-info > h3:last-child {
+    padding-right: 1vw;
+  }
+  

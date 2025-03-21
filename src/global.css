@@ -11,7 +11,7 @@
   font-family: "cheltenham";
   font-style: normal;
   font-weight: normal;
-  src: url(../Fonts/CheltenhamStdBook.woff) format("woff");
+  src: url(/src/assets/Fonts/CheltenhamStdBook.woff) format("woff");
 }
 
 * {

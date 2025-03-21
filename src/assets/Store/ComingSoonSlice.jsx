@@ -1,4 +1,3 @@
-// comingSoonSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const comingSoonSlice = createSlice({

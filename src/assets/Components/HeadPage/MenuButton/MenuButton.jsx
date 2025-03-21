@@ -1,7 +1,7 @@
-import "../../Styles/MenuButton.css";
+import "../../HeadPage/MenuButton/MenuButton.css";
 import { useDispatch } from "react-redux";
-import MenuList from "./MenuList.jsx";
-import { toggle } from "../../Store/menuButtonSlice.jsx";
+import MenuList from "../MenuList/MenuList.jsx";
+import { toggle } from "../../../Store/menuButtonSlice.jsx";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 

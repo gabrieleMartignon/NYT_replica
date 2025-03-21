@@ -16,7 +16,7 @@
     flex-direction: column;
     position: absolute;
     left: 64vw;
-    top: 20vh;
+    top: 17vh;
   }
 
   article.top-stories {
@@ -47,8 +47,8 @@
 
 article.top-stories > img {
   display: block;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 160px;
 }
 
 .top-stories h3 {
@@ -71,3 +71,15 @@ article.top-stories > img {
     }
   }
 }
+
+article.top-stories:first-of-type{
+  padding-top: 7vh;
+}
+
+
+@media (min-height: 1200px){
+  .top-stories-container{
+    top: 15.5vh;
+  }
+}
+
