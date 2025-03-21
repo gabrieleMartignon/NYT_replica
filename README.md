@@ -4,8 +4,9 @@ This project is a replica of the New York Times website. The goal was to create 
 ## Key Features:
 - **Responsive Design**: The site adapts seamlessly to mobile, tablet, and desktop devices.
 - **Interactive Interface**: Smooth user interactions and dynamic content loading.
-- **Sign-up Page**: Users can register and access personalized features.
+- **Sign-up Page**: Visual form for user registration. This form is not currently connected to a database. Registration will not have any effect and is for demonstration purposes only.
 - **Real-time News**: Fetches the latest articles directly from the New York Times API.
+- **Section Button**: A button that allows the user to choose which section to view.
 
 ## Contact
 
