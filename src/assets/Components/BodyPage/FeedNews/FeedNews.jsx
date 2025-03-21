@@ -39,7 +39,7 @@ function FeedNews() {
       })
       .catch((error) => {
         dispatch(setError(error));
-        console.error(error, "API Request Failed");
+        console.error(error, "API Request Failed" + import.meta.env.VITE_APIKEY);
         dispatch(setLoading(false));
       });
   }, [URL]);
